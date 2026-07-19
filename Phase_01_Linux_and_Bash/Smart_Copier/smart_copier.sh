@@ -13,11 +13,23 @@ sleep 1
 
 FOUND_PATH=$(find /home -name "$File_Name" 2>/dev/null | head -n 1)
 
+
 # -n checks if the variable is NOT empty (meaning we found something)
 if [ -n "$FOUND_PATH" ]; then
     echo " File found at: $FOUND_PATH"
 	echo "Enter the Destination to copy the file: "
 	read Dest_dir
+
+
+
+# --- Input Sanitization ---
+	DEST_DIR="${DEST_DIR/#\~/$HOME}"
+	if [[ "$DEST_DIR" != /* ]]; then
+		DEST_DIR="/$DEST_DIR"
+		echo "[*] Notice: Formatted path to absolute root -> $DEST_DIR"
+		sleep 1
+	fi
+
 
     if [ ! -d "$Dest_dir" ]; then
 		echo "Destination directory does not exist. Creating it now..."
