@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. Asking details from the user
-echo "Enter Main Project Name (avoid spaces): "
+echo "Enter Main Project Name: "
 read ProjectName
 
 # 2. Creating main directory
