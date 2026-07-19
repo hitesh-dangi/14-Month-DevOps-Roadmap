@@ -23,9 +23,9 @@ if [ -n "$FOUND_PATH" ]; then
 
 
 # --- Input Sanitization ---
-	DEST_DIR="${DEST_DIR/#\~/$HOME}"
-	if [[ "$DEST_DIR" != /* ]]; then
-		DEST_DIR="/$DEST_DIR"
+	Dest_dir="${Dest_dir/#\~/$HOME}"
+	if [[ "$Dest_dir" != /* ]]; then
+		Dest_dir="/$Dest_dir"
 		echo "[*] Notice: Formatted path to absolute root -> $DEST_DIR"
 		sleep 1
 	fi
