@@ -8,11 +8,11 @@ I am a BCA student and aspiring Cloud DevOps Engineer currently executing a rigo
 
 This project is divided into 5 major phases. (Currently executing Phase 1).
 
-* **[Phase 1: Linux & Bash Scripting Mastery](./Phase_01_Linux_and_Bash)** 🟢 *IN PROGRESS*
+* **[Phase 1: Linux & Bash Scripting Mastery](./Phase_01_Linux_and_Bash)** ✅ "COMPLETED"
   * Core OS navigation, permission management, and resource monitoring.
   * Automated system maintenance, log parsing (`grep`, `awk`), and CRON jobs.
   * Building self-healing scripts with exit code (`$?`) evaluations.
-* **Phase 2: Networking & Security** ⏳ *UPCOMING*
+* **Phase 2: Networking & Security** 🟢 *IN PROGRESS*
   * TCP/IP, DNS, Firewalls, and SSH key management.
 * **Phase 3: Cloud Architecture (AWS)** ⏳ *UPCOMING*
   * IAM, EC2, VPCs, and S3 provisioning.
