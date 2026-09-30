@@ -6,7 +6,7 @@ I am a BCA student and aspiring Cloud DevOps Engineer currently executing a rigo
 
 ## 🏗️ The Roadmap Architecture
 
-This project is divided into 5 major phases. (Currently executing Phase 1).
+This project is divided into 5 major phases. (Currently executing Phase 2).
 
 * **[Phase 1: Linux & Bash Scripting Mastery](./Phase_01_Linux_and_Bash)** ✅ "COMPLETED"
   * Core OS navigation, permission management, and resource monitoring.
