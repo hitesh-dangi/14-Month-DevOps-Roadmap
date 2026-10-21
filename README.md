@@ -1,30 +1,41 @@
 # 🚀 14-Month Cloud DevOps Engineer Roadmap
 
-Welcome to my central DevOps repository. 
+![ShellCheck CI](https://github.com/hitesh-dangi/14-Month-DevOps-Roadmap/actions/workflows/shellcheck.yml/badge.svg)
+![OS](https://img.shields.io/badge/OS-Ubuntu%20WSL2-E95420?logo=ubuntu&logoColor=white)
+![Shell](https://img.shields.io/badge/Scripting-Bash%20%26%20Python-4EAA25?logo=gnu-bash&logoColor=white)
 
-I am a BCA student and aspiring Cloud DevOps Engineer currently executing a rigorous 14-month training roadmap. This repository is not a tutorial graveyard; it is a live ledger of production-grade scripts, system architecture, and automated deployments I am building from scratch.
-
-## 🏗️ The Roadmap Architecture
-
-This project is divided into 5 major phases. (Currently executing Phase 2).
-
-* **[Phase 1: Linux & Bash Scripting Mastery](./Phase_01_Linux_and_Bash)** ✅ "COMPLETED"
-  * Core OS navigation, permission management, and resource monitoring.
-  * Automated system maintenance, log parsing (`grep`, `awk`), and CRON jobs.
-  * Building self-healing scripts with exit code (`$?`) evaluations.
-* **Phase 2: Networking & Security** 🟢 *IN PROGRESS*
-  * TCP/IP, DNS, Firewalls, and SSH key management.
-* **Phase 3: Cloud Architecture (AWS)** ⏳ *UPCOMING*
-  * IAM, EC2, VPCs, and S3 provisioning.
-* **Phase 4: Infrastructure as Code (Terraform)** ⏳ *UPCOMING*
-  * Automating AWS environments with immutable infrastructure.
-* **Phase 5: CI/CD Pipelines (Jenkins/GitHub Actions)** ⏳ *UPCOMING*
-  * Automated testing, building, and deploying.
-
-## 🛠️ Current Tech Stack
-* **OS:** Ubuntu (WSL)
-* **Scripting:** Bash
-* **Version Control:** Git & GitHub
+Welcome to my central Cloud & DevOps engineering ledger. This repository is not a tutorial graveyard—it is an active codebase of **32+ production-grade automation scripts**, security auditors, and network diagnostic tools built from scratch using strict error handling (`set -euo pipefail`).
 
 ---
-*"Complex infrastructure is just a bunch of simple scripts working together."*# 14-Month-DevOps-Roadmap
+
+## 🗺️ The Roadmap Architecture
+
+| Phase | Domain Focus | Key Automation Scripts & Capstones | Status |
+| :--- | :--- | :--- | :--- |
+| **[Phase 1](./Phase_01_Linux_and_Bash)** | **Linux & Bash Scripting Mastery** | `sysops_sentinel.sh`, `server_medic.sh`, `disk_janitor.sh`, `security_auditor.sh`, `log_parser.sh`, `malicious_ip_filter.sh` | ✅ **Completed** |
+| **[Phase 2](./Phase_02_Networking_Security)** | **Networking & Security Automation** | `network_inspector.sh`, `dns_inspector.sh`, `port_scanner.sh`, `ssh_manager.sh`, `ssh_config_gen.sh`, `ufw_firewall.sh` | 🟢 **In Progress** |
+| **Phase 3** | **Python for Cloud & OS Automation** | Log rotation parsers, `psutil` threshold alerting, REST API health monitors | ⏳ **Upcoming** |
+| **Phase 4** | **Cloud Architecture (AWS)** | IAM, EC2, Custom VPC (Public/Private Subnets), S3 Lifecycle, ALB, `boto3` | ⏳ **Upcoming** |
+| **Phase 5** | **IaC, Containers & CI/CD** | Docker, Terraform, GitHub Actions, Kubernetes | ⏳ **Upcoming** |
+
+---
+
+## 🖥️ Sample Execution Output (Phase 2 Diagnostics)
+
+```text
+$ ./Phase_02_Networking_Security/01_IP_and_Connectivity/network_inspector.sh
+[INFO] Checking active network interfaces and routing table...
+[OK] Default Gateway reachable (0% packet loss)
+[OK] DNS Resolution verified via 8.8.8.8
+[OK] Listening TCP Sockets audited via ss -tulnp
+```
+
+---
+
+## 🛠️ Current Tech Stack
+* **Operating System:** Ubuntu Linux (WSL2)
+* **Automation & Scripting:** Bash (`set -euo pipefail`), `grep`, `awk`, `sed`, Cron
+* **Networking & Security:** TCP/IP, DNS (`dig`), Socket Diagnostics (`ss`/`netstat`), Ed25519 SSH Key Management, UFW/Iptables
+* **Version Control & CI:** Git, GitHub, GitHub Actions (Automated ShellCheck Linting)
+
+> *"Complex infrastructure is just a bunch of simple scripts working together."*
